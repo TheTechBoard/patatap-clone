@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circles</title>
+	<script type="text/javascript" src="paper-full.js"></script>
+	<script type="text/paperscript" canvas="myCanvas">
+	for(var x=0; x<1000;x+=100){
+		for(var y=0; y<1000;y+=100){
+			var myCircle = new Path.Circle(new Point(x, y), 10);
+			myCircle.fillColor = 'purple';
+		}
+		
+	}
+	
+</script>
+<style>
+	canvas{
+		width: 100%;
+		background-color: black;
+		height: 100%;
+	}
+
+	body, html{
+		height: 100%;
+		margin:0;
+	}
+</style>
+</head>
+<body>
+
+	<canvas id="myCanvas" resize></canvas>
+
+</body>
+</html>
